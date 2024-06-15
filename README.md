@@ -38,7 +38,7 @@ To build and run the application in development mode, use the following command 
 Before you begin, ensure you have met the following requirements:
 * You have installed Node.js and npm
 * You have a Google Cloud account and have enabled the Places API and Maps JavaScript API
-* customize your map and get a map id in /Map Styles
+* You have customized your map and get a map id in /Map Styles
 * You have a Stripe account for payment processing
 * You have a Clerk account for authentication
 
