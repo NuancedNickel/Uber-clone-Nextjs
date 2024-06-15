@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Introduction
+This project is a clone of the popular ride-sharing app, Uber. It provides functionalities for users to book rides, view available drivers on a map, and process payments. The project is built with a modern stack that includes Next.js for server-side rendering and routing, React.js for the frontend, Tailwind CSS for styling, Google Maps API for displaying maps, Stripe for handling payments, and Clerk for authentication.
 
-## Getting Started
+# Tech Stack
+<p style="line-height: 2;">
+  
+* Next.js: Server-side rendering and routing    <br>
+        
+* React.js: Frontend library for building user interfaces   <br> 
 
-First, run the development server:
+* Tailwind CSS: Utility-first CSS framework    <br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Google Maps API: Integration for displaying maps and location data    <br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Stripe: Payment processing platform    <br>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* Clerk: User authentication and management  <br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+</p>
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+ # Installation and Setup
+<p style="line-height: 2;">
+--> Install Dependencies        <br>
+        
+To install the necessary dependencies, run the following command : 
+<code>npm install</code>
+</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p style="line-height: 2;">
+--> Run the Application        <br>
+        
+To build and run the application in development mode, use the following command : 
+<code>npm run dev</code>
+</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Prerequisites
+Before you begin, ensure you have met the following requirements:
+* You have installed Node.js and npm
+* You have a Google Cloud account and have enabled the Places API and Maps JavaScript API
+* You have a Stripe account for payment processing
+* You have a Clerk account for authentication
 
-## Deploy on Vercel
+# Environment Variables
+To configure the application, create a <code>.env.local</code> file in the root directory and add the following environment variables to use the app :       
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p style="line-height: 2.5;">
+  
+* CLERK_SECRET_KEY = <code>your_clerk_secret_key</code>        <br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY = <code>your_clerk_public_key</code>        <br>
+
+* STRIPE_SECRET_KEY = <code>your_stripe_secret_key</code>       <br>
+
+* NEXT_PUBLIC_STRIPE_PUBLISHER_KEY = <code>your_stripe_public_key</code>        <br>
+
+ --> for calling the API server side  
+* GOOGLE_API_KEY = <code>your_google_cloud_api_key</code>    <br>
+
+ --> for calling the API client side    
+* NEXT_PUBLIC_GOOGLE_API_KEY = <code>your_google_cloud_api_key</code>       <br>    
+
+ --> your customized MAP ID from google cloud/map platform/map styles
+* MAP_ID = <code>your MAP ID</code>        <br>
+
+* NEXT_PUBLIC_CLERK_SIGN_IN_URL = <code>/sign-in</code>        <br>
+
+* NEXT_PUBLIC_CLERK_SIGN_UP_URL = <code>/sign-up</code>        <br>
+
+Replace the placeholder values with your actual Google cloud , clerk , Stripe & MAP ID configuration details.
+</p>
+
